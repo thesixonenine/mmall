@@ -66,7 +66,12 @@ public class CloseOrderTask {
             closeOrder(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
         }else{
             //未获取到锁，继续判断，判断时间戳，看是否可以重置并获取到锁
-            String lockValueStr = RedisShardedPoolUtil.get(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+            String lockValueStr = null;
+            try {
+                lockValueStr = RedisShardedPoolUtil.get(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+            } catch (Exception e) {
+                //拿不到值会抛出异常的。。。
+            }
             if(lockValueStr != null && System.currentTimeMillis() > Long.parseLong(lockValueStr)){
                 String getSetResult = RedisShardedPoolUtil.getSet(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK,String.valueOf(System.currentTimeMillis()+lockTimeout));
                 //再次用当前时间戳getset。
