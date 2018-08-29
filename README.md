@@ -117,8 +117,4 @@ http://learning.happymmall.com/%E4%BA%8C%E6%9C%9F%E9%9B%86%E7%BE%A4%E5%8F%8A%E7%
 ## (为了更多小伙伴们体验使用，请不要修改密码)
 
 
-# 最后希望小伙伴们学的开心~码的快乐~收获满满~祝大家工作愉快~生活幸福~
-
-Geely
-
-
+![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
