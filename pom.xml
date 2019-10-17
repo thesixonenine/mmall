@@ -88,11 +88,11 @@
             <artifactId>alipay-sdk-java</artifactId>
             <version>3.1.0</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.alipay.sdk</groupId>-->
-<!--            <artifactId>alipay-trade-sdk</artifactId>-->
-<!--            <version>20161215</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-trade-sdk</artifactId>
+            <version>20161215</version>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>com.alipay.demo</groupId>-->
             <!--<artifactId>trade</artifactId>-->
